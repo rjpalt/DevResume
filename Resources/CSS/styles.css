@@ -58,6 +58,15 @@ li {
     color:#666666;
 }
 
+.course_info {
+    font-size: 0.75rem;
+    color: #666666;
+}
+
+.courseListing li {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+}
 
 .skill_item {
     font-size: 1rem;
@@ -135,6 +144,15 @@ li {
     margin-right: 1rem;
 }
 
+.courseListing {
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+
+.courseListing h3, span {
+    display: inline;
+}
+
 .workExpHeader {
     margin-top: 1.5rem;
 }
@@ -146,6 +164,10 @@ li {
 .workExpHeader span {
     float: right;
     padding-right: 1rem;
+}
+
+.course_info span{
+    float: left;
 }
 
 .workDescription_container {
@@ -183,6 +205,7 @@ li {
 .contact_container i {
     margin-right: 1rem;
 }
+
 #projects {
     margin-top: 1rem;
 }
@@ -207,7 +230,7 @@ li {
     height: 2800px;
     margin: 50px 0;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 6% 13% repeat(10, 1fr) 5%;
+    grid-template-rows: 6% 14% repeat(10, 1fr) 5%;
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 
@@ -272,7 +295,7 @@ li {
     max-height: 100%;
     margin-left: 110px;
     margin-top: 1rem;
-    grid-area: 7 / 1 / span 7 / span 4;
+    grid-area: 7 / 1 / span 6 / span 4;
     border-right: 2px solid #26263B;
 }
 
@@ -307,7 +330,7 @@ li {
 }
 
 .education_container {
-    grid-area: 7 / 5 / span 1 / span 2;
+    grid-area: 6 / 5 / span 1 / span 2;
     margin: 0;
     max-width: 100%;
     max-height: 100%;
@@ -329,14 +352,14 @@ li {
 }
 
 .languages_container {
-    grid-area: 8 / 5 / span 1 / span 2;
+    grid-area: 7 / 5 / span 1 / span 2;
     margin: 0;
     max-width: 100%;
     max-height: 100%;
 }
 
 .interests_container {
-    grid-area: 10 / 5 / span 2 / span 2;
+    grid-area: 8 / 5 / span 2 / span 2;
     margin: 0;
     max-width: 100%;
     max-height: 100%;
