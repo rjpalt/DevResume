@@ -95,7 +95,7 @@ li {
 */
 
 .main_cont_wrapper {
-    background-color: rgba(240,240,240,1.0);
+    background-color: white;
 }
 
 .main_cont {
@@ -121,7 +121,7 @@ li {
 }
 
 .aboutme_container {
-    margin: 0 110px;
+    margin: 0 20px 0 110px;
     padding-top: 20px;
     border-top: 1px solid #26263B;
     border-bottom: 1px solid #26263B;
@@ -210,6 +210,31 @@ li {
     margin-top: 1rem;
 }
 
+.projectListing {
+    margin: 1rem 0;
+}
+
+.sidebar_container {
+    padding-right: 2rem;
+}
+
+.footer_section {
+    margin: 0 20px 0 110px;
+    border-top: 2px solid #26263B;
+}
+
+.footer_section li {
+    display: inline;
+}
+
+.footer_section li:last-child {
+    margin-left: 1rem;
+}
+
+.footer_section i {
+    margin-right: 0.25rem;
+}
+
 
 
 /* 
@@ -227,10 +252,10 @@ li {
 .main_cont {
     display: grid;
     width: 1140px;
-    height: 2800px;
+    height: 3600px;
     margin: 50px 0;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 6% 14% repeat(10, 1fr) 5%;
+    grid-template-rows: 5% 12% repeat(10, 1fr) 5%;
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 
@@ -284,7 +309,7 @@ li {
     max-height: 100%;
     margin-left: 110px;
     margin-top: 1rem;
-    grid-area: 3 / 1 / span 4 / span 4;
+    grid-area: 3 / 1 / span 5 / span 4;
     border-right: 2px solid #26263B;
 }
 
@@ -294,8 +319,8 @@ li {
     max-width: 100%;
     max-height: 100%;
     margin-left: 110px;
-    margin-top: 1rem;
-    grid-area: 7 / 1 / span 6 / span 4;
+    padding-top: 1rem;
+    grid-area: 8 / 1 / span 5 / span 4;
     border-right: 2px solid #26263B;
 }
 
@@ -330,8 +355,9 @@ li {
 }
 
 .education_container {
-    grid-area: 6 / 5 / span 1 / span 2;
+    grid-area: 7 / 5 / span 1 / span 2;
     margin: 0;
+    width: 100%;
     max-width: 100%;
     max-height: 100%;
 }
@@ -345,22 +371,36 @@ li {
 
 
 .skills_container {
-    grid-area: 3 / 5 / span 4 / span 2;
     margin: 0;
     max-width: 100%;
     max-height: 100%;
 }
 
 .languages_container {
-    grid-area: 7 / 5 / span 1 / span 2;
     margin: 0;
     max-width: 100%;
     max-height: 100%;
 }
 
 .interests_container {
-    grid-area: 8 / 5 / span 2 / span 2;
     margin: 0;
     max-width: 100%;
     max-height: 100%;
+}
+
+.footer_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    grid-area: 13 / 1 / span 1 / span 6;
+}
+
+.sidebar_container {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 100%;
+    max-height: 100%;
+    grid-area: 3 / 5 / span 9 / span 2; 
 }
